@@ -81,24 +81,7 @@ body {
   .account-heading {
     font-size: 2.5rem;
   }
-  /* .str{
-    background-image: url("./3.jpeg");
-    background-size: cover;
-    height: 50vh;
-    
-  }
-  .ongati{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-
-  }
-  .ongati h1{
-    color: white;
-    
-  } */
+  
 
   blockquote{
     border-left:none
