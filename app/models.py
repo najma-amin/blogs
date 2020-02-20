@@ -32,8 +32,8 @@ class User(db.Model, UserMixin):
             return None
         return User.query.get(user_id)
 
-    def __repr__(self):
-        return f"User('{self.username}', '{self.email}', '{self.image_file}')"
+    # def __repr__(self):
+    #      return f'User: {self.username}'
 
 
 class Post(db.Model):
@@ -43,8 +43,8 @@ class Post(db.Model):
     content = db.Column(db.Text, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
 
-    def __repr__(self):
-        return f"Post('{self.title}', '{self.date_posted}')"
+    # def __repr__(self):
+    #     return f"Post Title: {self.title}"
     
 class Comment(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -52,8 +52,8 @@ class Comment(db.Model):
     content = db.Column(db.Text, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
 
-    def __repr__(self):
-        return f"Comment('{self.content}', '{self.date_posted}')"
+    #  def __repr__(self):
+    #         return f'Comments: {self.comment}'
     
     
 class Quote:
