@@ -1,0 +1,15 @@
+.welcome{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)),url("../static/images/3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    color:white;
+}
+
+.mes{
+  margin-top: 100px;
+}
+
+.blog{
+
+}
