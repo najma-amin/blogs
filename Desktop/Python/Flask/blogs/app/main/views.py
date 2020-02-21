@@ -4,17 +4,15 @@ from flask_login import login_required,current_user
 from ..models import User,Comment,Blog
 from .. import db
 from .form import BlogForm,CommentForm
-
-
-
 @main.route('/')
 def index():
     blog = Blog.query.all()
+    news= Blog.query.filter_by(category='news')
     technology = Blog.query.filter_by(category='Technology').all
     sports=Blog.query.filter_by(category='Sports').all
     music=Blog.query.filter_by(category='Music').all
     
-    return render_template('index.html', technology=technology,music=music,blog=blog,sports=sports)
+    return render_template('index.html', news=news,technology=technology,music=music,blog=blog,sports=sports)
 
 
 @main.route('/blog',methods=['GET','POST'])

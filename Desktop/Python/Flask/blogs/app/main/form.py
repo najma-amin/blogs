@@ -9,6 +9,6 @@ class CommentForm(FlaskForm):
 
 class BlogForm(FlaskForm):
     title = StringField('Title',validators=[Required()])
-    category = SelectField('Category',choices=[('Technology','Technology'),('Music','Music'),('Sports','Sports')],validators = [Required()])
+    category = SelectField('Category',choices=[('News','News''Technology','Technology'),('Music','Music'),('Sports','Sports')],validators = [Required()])
     post = TextAreaField('Your blog', validators = [Required()])
     submit = SubmitField('share your blog')

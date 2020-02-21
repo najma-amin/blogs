@@ -35,7 +35,7 @@ class User(db.Model,UserMixin):
         db.session.commit()
 
     def __repr__ (self):
-        return f'User{self.username}'
+        return 'User{self.username}'
         
 class Blog(db.Model):
     __tablename__ = 'blog'
@@ -53,7 +53,7 @@ class Blog(db.Model):
         db.session.commit()
 
     def __repr__ (self):
-        return f'Blog{self.post}'
+        return 'Blog{self.post}'
 
 class Comment(db.Model):
     __tablename__ = 'comment'
@@ -74,7 +74,7 @@ class Comment(db.Model):
 
 
     def __repr__(self):
-        return f'Comment:{self.content}'
+        return 'Comment:{self.content}'
 
 
 @login_manager.user_loader
