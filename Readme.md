@@ -1,5 +1,5 @@
 ## PROJECT  NAME 
- - 60 SECONDS PITCH 
+ - BLOGGERS
 
 ## AUTHOR 
  - NAJMA AMIN
@@ -7,7 +7,7 @@
  ## DESCRIPTION 
  - This is a Blogs-Flask Application that allows users to create a blogs, share their blogs about news, technology, sports,music and others can view
 
- ## BDD(Behaviour Driven Development)
+
 
 
 ## Technologies used
@@ -22,7 +22,7 @@
 
 # Prerequisites
 
-To work with ONE MINUTE PITCH App you need to have some few prerequisites.
+To work with Blogs App you need to have some few prerequisites.
 
 - Python3.6
 
